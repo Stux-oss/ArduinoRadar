@@ -1,6 +1,4 @@
-/* ============================================================================
-   SONAR RADAR  ·  firmware v2
-   IB MYP Design — Unit 2: Interactive display and sensors
+
 
    A servo sweeps an HC-SR04 ultrasonic sensor and streams every reading to the
    laptop. The laptop (RadarDisplay sketch) draws the radar and makes the sonar
