@@ -1,6 +1,4 @@
-/* ============================================================================
-   SONAR RADAR  ·  display + sound  v2
-   IB MYP Design — Unit 2: Interactive display and sensors
+
 
    Reads "<angle>,<distance>" lines from the Arduino, draws the sweep, groups
    the echoes into numbered tracks, and plays a submarine sonar ping through
