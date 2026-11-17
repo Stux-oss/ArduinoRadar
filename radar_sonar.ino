@@ -1,30 +1,8 @@
-
-
-   A servo sweeps an HC-SR04 ultrasonic sensor and streams every reading to the
-   laptop. The laptop (RadarDisplay sketch) draws the radar and makes the sonar
-   sound, so this board has one job: aim, measure, report.
-
-   OUT  one line per reading, 115200 baud:
-            <angle>,<distance>\n      distance in cm, -1 = no echo
-        lines that start with '#' are status messages for the event log
-
-   IN   single-character commands from the laptop:
-            p        pause / resume the sweep
-            1 2 3    sweep speed: slow, normal, fast
-
-   Wiring (Uno / Nano)
-       servo signal  -> D11      (red 5V, brown GND)
-       HC-SR04 TRIG  -> D9
-       HC-SR04 ECHO  -> D10
-       HC-SR04 VCC   -> 5V       GND -> GND
-   Power the servo from its own 5V supply if the sweep makes readings jump.
-   ========================================================================== */
-
 #include <Servo.h>
 
 /* ---- pins ---------------------------------------------------------------- */
-const uint8_t PIN_SERVO = 11;
-const uint8_t PIN_TRIG  = 9;
+const uint8_t PIN_SERVO = 12;
+const uint8_t PIN_TRIG  = 11;
 const uint8_t PIN_ECHO  = 10;
 
 /* ---- sweep --------------------------------------------------------------- */
